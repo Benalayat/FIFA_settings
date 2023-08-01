@@ -1,7 +1,6 @@
 #!/bin/bash
 files=($@)
 git add ${files[@]}
-echo ${files[@]}
 read -p "your commit message : " message
 git commit -m "$message"
 git push
